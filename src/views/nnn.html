@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* .waiBox{
+            width: 600px;
+            height: 200px;
+            border: 1px solid orange;
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .item{
+            width: 100px;
+            height: 200px;
+            background-color: aqua;
+            display: inline-block;
+        } */
+        .waiBox{
+            width: 600px;
+            height: 200px;
+            border: 1px solid orange;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+            column-gap: 10px;
+            /* white-space: nowrap; */
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .item{
+            width: 100px;
+            height: 200px;
+            background-color: aqua;
+            /* display: inline-block; */
+        }
+    </style>
+</head>
+<body>
+    <div class="waiBox">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // new Promise(()=>{
+        //     run(0)
+        // }).then(()=>{
+        //     run(1)
+        // }).then(()=>{
+        //     run(2)
+        // })
+
+        // let isForget = true
+        // let getLv = new Promise((resolve, reject) => {  //resolve是成功时的，reject是失败时的
+        //     if (isForget) {
+        //         let lv = {
+        //             color: 'orange',
+        //             piece: "$223"
+        //         }
+        //         resolve(lv)
+        //     }else{
+        //         let err = new Error("忘了")
+        //         reject(err)
+        //     }
+        // })
+        // let testFn = function(){
+        //     //成功调用then，失败调用catch
+        //     getLv.then((fulfilled)=>{
+        //         console.log(fulfilled);
+        //     }).catch((rejected)=>{
+        //         console.log(rejected);
+        //     })
+        // }
+        // testFn()
+        // function sleep(time) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve()
+        //         }, time)
+        //     })
+        // }
+        // sleep(2000).then(() => {
+        //     console.log(1)
+        // })
+        function myPromise(excutor) {
+            let self = this
+            self.status = 'pendding';
+            self.value = null;
+            self.reson = null;
+
+            function resolve(params) {
+                
+            }
+
+            function reject(params) {
+                
+            }
+        }
+
+        let demo = new myPromise((resolve,reject)=>{
+            console.log(1);
+        })
+    </script>
+</body>
+
+</html>
