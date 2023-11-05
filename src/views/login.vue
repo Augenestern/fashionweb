@@ -95,22 +95,23 @@ let disableKouge = (e: any) => {
 let btnLogin = async () => {
     if (userlist.username != "" && userlist.password != "") {
         console.log(222);
-        await loginAPI(JSON.parse(JSON.stringify(userlist))).then((res: any) => {
-            if (res.code == 200) {
-                localStorage.setItem('loginToken', res.data.token)
-                // ElMessage({
-                //     message: 'Congrats, this is a success message.',
-                //     type: 'success',
-                // })
-                // router.push('/home')
-                document.startViewTransition(() => {
-                    router.push('/home')
-                })
-            } else {
-                ElMessage.error('登录失败,请检查用户名或密码')
-            }
-        })
+        // await loginAPI(JSON.parse(JSON.stringify(userlist))).then((res: any) => {
+        //     if (res.code == 200) {
+        //         localStorage.setItem('loginToken', res.data.token)
+        //         // ElMessage({
+        //         //     message: 'Congrats, this is a success message.',
+        //         //     type: 'success',
+        //         // })
+        //         // router.push('/home')
+        //         document.startViewTransition(() => {
+        //             router.push('/home')
+        //         })
+        //     } else {
+        //         ElMessage.error('登录失败,请检查用户名或密码')
+        //     }
+        // })
     }
+    router.push('/home')
 }
 let btnRegister = async () => {
     if (userlist.username != "" && userlist.password != "" && password1.value != "") {

@@ -10,6 +10,14 @@ const routes: Array<RouteRecordRaw> = [
     path: "/home",
     component: () => import("@/views/home.vue"),
   },
+  {
+    path: "/formreset",
+    component: () => import("@/views/formReset.vue"),
+  },
+  {
+    path: "/kb",
+    component: () => import("@/components/zujian/kB.vue"),
+  },
 ];
 // 1.返回一个 router 实列，为函数，里面有配置项（对象） history
 const router = createRouter({
